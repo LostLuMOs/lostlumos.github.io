@@ -109,19 +109,15 @@ function displayTeam(team) {
     // Creates HTML-Elements for each team member
     team.forEach(pokemon => {
         if (pokemon && pokemon.sprite) {
-            // Creates element
-            const pokemonDiv = document.createElement('div');
-            pokemonDiv.className = 'pokemon';
-
             // Creates image with alt-text
             const pokemonImg = document.createElement('img');
             pokemonImg.src = pokemon.sprite;
             pokemonImg.alt = pokemon.name;
             
-            // Appends elements
-            pokemonDiv.appendChild(pokemonImg);
-            teamDisplay.appendChild(pokemonDiv);
-        } else {
+            // Appends element
+            teamDisplay.appendChild(pokemonImg);
+        } 
+        else {
             // Data not available
             console.warn('Skipped a Pokémon due to missing data:', pokemon);
         }

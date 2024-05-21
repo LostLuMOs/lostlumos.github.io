@@ -1,14 +1,20 @@
 body {
-    font-family: Arial, sans-serif;
+    background-color: black;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: black;
-    color: red;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(2,0,36,1) 0%, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 100%);
+    color: white;
     padding: 1em 0;
     text-align: center;
+}
+
+header a {
+    color: white;
 }
 
 nav ul {
@@ -22,21 +28,31 @@ nav ul li {
 }
 
 nav ul li a {
-    color: red;
+    color: white;
     text-decoration: none;
 }
 
 main {
+    color: white;
     padding: 1em;
     text-align: center;
 }
 
+main a {
+    color: white;
+}
+
 footer {
-    background-color: black;
-    color: red;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(2,0,36,1) 0%, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 100%);
+    color: white;
     text-align: center;
     padding: 0.5em 0;
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+footer a {
+    color: white;
 }
