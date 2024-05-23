@@ -6,8 +6,8 @@ body {
 }
 
 header {
-    background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(2,0,36,1) 0%, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 100%);
+    background: rgb(121,26,32);
+    background: linear-gradient(180deg, rgba(121,26,32,1) 0%, rgba(0,0,0,1) 100%);
     color: white;
     padding: 1em 0;
     text-align: center;
@@ -43,8 +43,8 @@ main a {
 }
 
 footer {
-    background: rgb(2,0,36);
-    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(2,0,36,1) 0%, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 100%);
+    background: rgb(121,26,32);
+    background: linear-gradient(0deg, rgba(121,26,32,1) 0%, rgba(0,0,0,1) 100%);
     color: white;
     text-align: center;
     padding: 0.5em 0;
