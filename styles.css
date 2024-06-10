@@ -1,15 +1,19 @@
-body {
-    background-color: black;
-    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
-    margin: 0;
-    padding: 0;
+html {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
+/*
+--------------------------------------------------
+Header Styles
+--------------------------------------------------
+*/
 header {
     background: rgb(121,26,32);
     background: linear-gradient(180deg, rgba(121,26,32,1) 0%, rgba(0,0,0,1) 100%);
     color: white;
-    padding: 1em 0;
+    padding: 0.5% 0 1.5% 0;
     text-align: center;
 }
 
@@ -23,13 +27,26 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin: 0 10px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+}
+
+
+
+/*
+--------------------------------------------------
+Body Styles
+--------------------------------------------------
+*/
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
 }
 
 main {
@@ -42,12 +59,36 @@ main a {
     color: white;
 }
 
+.flex-container {
+    /*
+    background: green;
+    */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.flex-container div {
+    /*
+    background: orangered;
+    */
+    margin: 2.5%;
+    padding: 0;
+}
+
+/*
+--------------------------------------------------
+Footer Styles
+--------------------------------------------------
+*/
 footer {
     background: rgb(121,26,32);
     background: linear-gradient(0deg, rgba(121,26,32,1) 0%, rgba(0,0,0,1) 100%);
     color: white;
     text-align: center;
-    padding: 0.5em 0;
+    padding: 1.5% 0 0.5% 0;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -55,4 +96,17 @@ footer {
 
 footer a {
     color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+
+
+/*
+--------------------------------------------------
+Miscellaneous Styles
+--------------------------------------------------
+*/
+button {
+    border-radius: 16px;
 }
