@@ -10,19 +10,18 @@
 <body>
     <header>
         <h1>Pokémon Team Generator</h1>
-
+        
+        <a href="/index.html"><img src="/Media/trainer.png" height="250" alt="LuMOs"></a>
         <nav>
             <ul>
-                <li><a href="/placeholder.html">Placeholder</a></li>
-                <li><a href="/placeholder.html">Placeholder</a></li>
-                <a href="/index.html"><img src="/Media/trainer.png" width="150" height="150" alt="LuMOs"></a>
-                <li><a href="/placeholder.html">Placeholder</a></li>
-                <li><a href="/placeholder.html">Placeholder</a></li>
+                <li><h2><a href="/index.html#articles">Articles</a></h2></li>
+                <li><h2><a href="/index.html">Home</a></h2></li>
+                <li><h2><a href="/index.html#projects">Projects</a></h2></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div id="app">
+        <div class="flex-container">
             <h1>Generate a random Pokémon Team</h1>
             <form id="randomizerForm">
                 <label>
@@ -53,6 +52,9 @@
             </form>
             <div id="teamDisplay"></div>
         </div>
+
+        <p id="edited">Project last edited: June 2024</p>
+
         <script src="scripts.js"></script>
     </main>
     <footer>

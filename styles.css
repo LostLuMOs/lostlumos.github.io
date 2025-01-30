@@ -12,23 +12,23 @@ Header Styles
 header {
     background: rgb(121,26,32);
     background: linear-gradient(180deg, rgba(121,26,32,1) 0%, rgba(0,0,0,1) 100%);
-    color: white;
     padding: 0.5% 0 1.5% 0;
-    text-align: center;
-}
-
-header a {
     color: white;
+    text-align: center;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
+    background: rgb(121,26,32);
+    border-radius: 50px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 5%;
 }
 
 nav ul li {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 2%;
 }
 
 nav ul li a {
@@ -52,28 +52,39 @@ body {
 main {
     color: white;
     padding: 1em;
-    text-align: center;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
 }
 
 main a {
     color: white;
 }
 
+h1 {
+    text-align: center;
+    margin: auto;
+}
+
+h2 {
+    text-align: left;
+    margin: auto;
+}
+
 .flex-container {
-    /*
-    background: green;
-    */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    text-align: center;
+    background: rgb(121,26,32);
+    border-radius: 50px;
+    padding: 5%;
 }
 
 .flex-container div {
-    /*
-    background: orangered;
-    */
     margin: 2.5%;
     padding: 0;
 }
@@ -109,4 +120,8 @@ Miscellaneous Styles
 */
 button {
     border-radius: 16px;
+}
+
+#edited {
+    text-align: right;
 }
