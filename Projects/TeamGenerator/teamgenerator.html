@@ -11,7 +11,7 @@
     <header>
         <h1>Pokémon Team Generator</h1>
         
-        <a href="/index.html"><img src="/Media/trainer.png" height="250" alt="LuMOs"></a>
+        <a href="/index.html"><img src="/Media/trainer.gif" height="250" alt="LuMOs"></a>
         <nav>
             <ul>
                 <li><h2><a href="/index.html#articles">Articles</a></h2></li>
@@ -21,9 +21,18 @@
         </nav>
     </header>
     <main>
+        <h1>Generate a random Pokémon Team</h1>
+
+        <div id="teamDisplay" style="text-align: center;"></div></li>
+
         <div class="flex-container">
-            <h1>Generate a random Pokémon Team</h1>
             <form id="randomizerForm">
+                <label>Team Size:
+                    <div class="slidecontainer">
+                        <input type="range" id="teamSize" name="teamSize" min="1" max="6" value="6">
+                    </div>
+                </label>
+
                 <label>
                     <dt>
                         Generation 1<input type="checkbox" id="gen1" name="gen1">
@@ -41,16 +50,10 @@
                         Generation 9<input type="checkbox" id="gen9" name="gen9">
                     </dt>
                 </label>
-
-                <label>Team Size:
-                    <div class="slidecontainer">
-                        <input type="range" id="teamSize" name="teamSize" min="1" max="6" value="6">
-                    </div>
-                </label>
+                <br>
                     
                 <button type="button" onclick="generateTeam()">Generate Team</button>
             </form>
-            <div id="teamDisplay"></div>
         </div>
 
         <p id="edited">Project last edited: June 2024</p>
