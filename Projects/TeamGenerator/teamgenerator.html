@@ -9,9 +9,6 @@
 </head>
 <body>
     <header>
-        <h1>Pokémon Team Generator</h1>
-        
-        <a href="/index.html"><img src="/Media/trainer.gif" height="250" alt="LuMOs"></a>
         <nav>
             <ul>
                 <li><h2><a href="/index.html#articles">Articles</a></h2></li>
@@ -19,41 +16,46 @@
                 <li><h2><a href="/index.html#projects">Projects</a></h2></li>
             </ul>
         </nav>
+
+        <a href="/index.html"><img src="/Media/trainer.gif" height="250" alt="LuMOs"></a>
+        <h1>Pokémon Team Generator</h1>
     </header>
     <main>
-        <h1>Generate a random Pokémon Team</h1>
+        <div class="container">
+            <h1>Generate a random Pokémon Team</h1>
 
-        <div id="teamDisplay" style="text-align: center;"></div></li>
+            <div class="item-container" id="teamDisplay" style="text-align: center;"></div></li>
 
-        <div class="flex-container">
-            <form id="randomizerForm">
-                <label>Team Size:
-                    <div class="slidecontainer">
-                        <input type="range" id="teamSize" name="teamSize" min="1" max="6" value="6">
-                    </div>
-                </label>
+            <div class="text-container">
+                <form id="randomizerForm">
+                    <label>Team Size:
+                        <div class="slidecontainer">
+                            <input type="range" id="teamSize" name="teamSize" min="1" max="6" value="6">
+                        </div>
+                    </label>
 
-                <label>
-                    <dt>
-                        Generation 1<input type="checkbox" id="gen1" name="gen1">
-                        Generation 2<input type="checkbox" id="gen2" name="gen2">
-                        Generation 3<input type="checkbox" id="gen3" name="gen3">
-                    </dt>
-                    <dt>
-                        Generation 4<input type="checkbox" id="gen4" name="gen4">
-                        Generation 5<input type="checkbox" id="gen5" name="gen5">
-                        Generation 6<input type="checkbox" id="gen6" name="gen6">
-                    </dt>
-                    <dt>
-                        Generation 7<input type="checkbox" id="gen7" name="gen7">
-                        Generation 8<input type="checkbox" id="gen8" name="gen8">
-                        Generation 9<input type="checkbox" id="gen9" name="gen9">
-                    </dt>
-                </label>
-                <br>
-                    
-                <button type="button" onclick="generateTeam()">Generate Team</button>
-            </form>
+                    <label>
+                        <dt>
+                            Generation 1<input type="checkbox" id="gen1" name="gen1">
+                            Generation 2<input type="checkbox" id="gen2" name="gen2">
+                            Generation 3<input type="checkbox" id="gen3" name="gen3">
+                        </dt>
+                        <dt>
+                            Generation 4<input type="checkbox" id="gen4" name="gen4">
+                            Generation 5<input type="checkbox" id="gen5" name="gen5">
+                            Generation 6<input type="checkbox" id="gen6" name="gen6">
+                        </dt>
+                        <dt>
+                            Generation 7<input type="checkbox" id="gen7" name="gen7">
+                            Generation 8<input type="checkbox" id="gen8" name="gen8">
+                            Generation 9<input type="checkbox" id="gen9" name="gen9">
+                        </dt>
+                    </label>
+                    <br>
+                        
+                    <button type="button" onclick="generateTeam()">Generate Team</button>
+                </form>
+            </div>
         </div>
 
         <p id="edited">Project last edited: June 2024</p>
