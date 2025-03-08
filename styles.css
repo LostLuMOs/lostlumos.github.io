@@ -25,6 +25,7 @@ nav {
 
 nav ul li {
     display: inline-flex;
+    position:static;
     padding: 1% 5% 1% 5%;
 }
 
