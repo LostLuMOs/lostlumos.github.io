@@ -19,14 +19,14 @@ header {
 nav {
     background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(121,26,32,1) 100%);
     list-style-type: none;
-    position:static;
+    position: static;
     padding: 1% 0% 1% 0%;
 }
 
 nav ul li {
     display: inline-flex;
-    position:static;
-    padding: 1% 5% 1% 5%;
+    position: static;
+    padding: 1% 2.5% 1% 2.5%;
 }
 
 nav ul li a {
