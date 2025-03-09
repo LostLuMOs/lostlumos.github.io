@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head id="home">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LED Game</title>
+    <link rel="icon" href="/Media/icon.png" type="image/png">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+
+  <body>
+    <header>
+      <nav>
+          <ul>
+              <li><h2><a href="/index.html#articles">Articles</a></h2></li>
+              <li><h2><a href="/index.html#home">Home</a></h2></li>
+              <li><h2><a href="/index.html#projects">Projects</a></h2></li>
+          </ul>
+      </nav>
+
+      <a href="/index.html"><img src="/Media/led.png" height="250" alt="LuMOs"></a>
+      <h1>LED Game</h1>
+  </header>
+
+    <main>
+        <!-- Game Over, Score, Restart, Playing Field -->
+        <div class="container">
+          <div class="text-container">
+            <p>Notice: This project isn't finished and may contain some bugs.</p>
+
+            <h2>How to Play</h2>
+            <p>Click on a yellow LED to gain a point. Once you did, you'll have a short amount of time to click on the next one. The game ends, if you miss a yellow diode, let to much time pass or, if you click on a red LED instead.</p>
+          </div>
+
+          <div class="text-container" id="game-over" style="display: none;">
+            <p>Game Over!</p>
+          </div>
+
+          <div class="text-container" id="score">Score: 
+            <span id="highscore">0</span>
+            <br>
+            <button id="restart" type="button" style="display: none; align-self: center;" onclick="location.reload()">Try Again</button>
+          </div>
+
+          
+
+          <div class="item-container">
+            <div class="led-grid" id="container"></div>
+          </div>
+          <!-- 
+          <form id="highscore-form" style="display: none; margin-top: 20px;">
+          <input type="text" id="player-name" placeholder="Spielername" required>
+          <button type="submit">Highscore speichern</button>
+          </form>
+          -->
+          
+        <div class="text-container">
+          <h2>About</h2>
+          <p>This little game wasn't exclusivley developed by me. My cousin originaly programmed the base of it with the help of ChatGPT and hosted it on his website. 
+            I edited a few parts of his script and added a red tile, you shouldn't click on, to make it a bit more engaging. 
+            He named it LED Game, perhabs beause it rembered him of a physical project he build back in vocational school. 
+            Long story short: I've got his permission and made some adjustments, so you can play here now instead.</p>
+        </div>
+
+        </div>
+
+        <!-- Highscore-Liste 
+          <div>
+            <h2>Highscore-Liste</h2>
+              <table id="highscore-table" border="1" style="width: 100%; border-collapse: collapse;">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Score</th>
+                  </tr>
+                </thead>
+              <tbody id="highscore-list"></tbody>
+            </table>
+          </div>
+        -->
+
+        <p id="edited">Project last edited: December 2024</p>
+    </main>
+
+    <footer>
+      <dt>Created by <a href="https://github.com/LostLuMOs">LuMOs</a></dt>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
